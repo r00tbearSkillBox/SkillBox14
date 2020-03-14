@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RtM-yZ-z3L">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab 1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SkillBox14" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loading.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9O-Ll-rcF">
+                                <rect key="frame" x="77" y="75" width="260" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading.. ˚C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jec-c5-hIG">
+                                <rect key="frame" x="20.5" y="130" width="373" height="138"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="71"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zcr-2U-cCN">
+                                <rect key="frame" x="20" y="276" width="374" height="480"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DateCell" id="kJZ-fm-1CT" customClass="DateCell" customModule="SkillBox14" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kJZ-fm-1CT" id="RU8-LM-0c7">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ck-iW-BQ4">
+                                                    <rect key="frame" x="20" y="11" width="334" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateCellLabel" destination="3Ck-iW-BQ4" id="WfR-mN-PqE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="QWN-VP-XfL"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9pp-oM-RFZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60893313480143663" green="0.93390160346227935" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Jec-c5-hIG" firstAttribute="centerX" secondItem="E9O-Ll-rcF" secondAttribute="centerX" id="0aV-ju-RWB"/>
+                            <constraint firstItem="E9O-Ll-rcF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0524554" id="2Gd-oR-tYf"/>
+                            <constraint firstItem="zcr-2U-cCN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.535714" id="C6V-2i-Ru2"/>
+                            <constraint firstItem="E9O-Ll-rcF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="PIf-iD-AI4"/>
+                            <constraint firstItem="Jec-c5-hIG" firstAttribute="height" secondItem="E9O-Ll-rcF" secondAttribute="height" multiplier="2.93617" id="Ycq-Px-gxa"/>
+                            <constraint firstItem="zcr-2U-cCN" firstAttribute="top" secondItem="Jec-c5-hIG" secondAttribute="bottom" constant="8" id="cmY-v0-D7S"/>
+                            <constraint firstItem="zcr-2U-cCN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gnn-Yh-laJ"/>
+                            <constraint firstItem="zcr-2U-cCN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ltg-Au-iz5"/>
+                            <constraint firstItem="E9O-Ll-rcF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wAM-Zk-pdY"/>
+                            <constraint firstItem="Jec-c5-hIG" firstAttribute="top" secondItem="E9O-Ll-rcF" secondAttribute="bottom" constant="8" id="yY7-RE-1Ma"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tab 1" id="743-cN-Asw"/>
+                    <connections>
+                        <outlet property="appTableView" destination="zcr-2U-cCN" id="bQv-0d-0aF"/>
+                        <outlet property="citiTemp" destination="Jec-c5-hIG" id="cc5-NM-LmK"/>
+                        <outlet property="cityLabel" destination="E9O-Ll-rcF" id="g7g-qK-bLY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-329" y="866"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BXF-qJ-th4">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RtM-yZ-z3L" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mbd-bF-kDX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fep-6P-O0b"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4u-b4-yAA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>

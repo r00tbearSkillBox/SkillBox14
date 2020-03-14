@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		00BF6692241D595D00FB0FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF6691241D595D00FB0FDF /* AppDelegate.swift */; };
 		00BF6694241D595D00FB0FDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF6693241D595D00FB0FDF /* SceneDelegate.swift */; };
-		00BF6696241D595D00FB0FDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF6695241D595D00FB0FDF /* ViewController.swift */; };
-		00BF6699241D595D00FB0FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BF6697241D595D00FB0FDF /* Main.storyboard */; };
 		00BF669C241D595D00FB0FDF /* SkillBox14.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00BF669A241D595D00FB0FDF /* SkillBox14.xcdatamodeld */; };
 		00BF669E241D595F00FB0FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BF669D241D595F00FB0FDF /* Assets.xcassets */; };
 		00BF66A1241D595F00FB0FDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BF669F241D595F00FB0FDF /* LaunchScreen.storyboard */; };
+		00BF66B7241D5C7E00FB0FDF /* HourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF66B5241D5C7E00FB0FDF /* HourCell.swift */; };
+		00BF66B8241D5C7E00FB0FDF /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF66B6241D5C7E00FB0FDF /* DateCell.swift */; };
+		00BF66BA241D5C9100FB0FDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF66B9241D5C9100FB0FDF /* ViewController.swift */; };
+		00BF66BC241D5C9800FB0FDF /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF66BB241D5C9800FB0FDF /* Weather.swift */; };
+		00BF66BE241D5CA100FB0FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BF66BD241D5CA100FB0FDF /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00BF668E241D595D00FB0FDF /* SkillBox14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillBox14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BF6691241D595D00FB0FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00BF6693241D595D00FB0FDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		00BF6695241D595D00FB0FDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		00BF6698241D595D00FB0FDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00BF669B241D595D00FB0FDF /* SkillBox14.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkillBox14.xcdatamodel; sourceTree = "<group>"; };
 		00BF669D241D595F00FB0FDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00BF66A0241D595F00FB0FDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00BF66A2241D595F00FB0FDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00BF66B5241D5C7E00FB0FDF /* HourCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourCell.swift; sourceTree = "<group>"; };
+		00BF66B6241D5C7E00FB0FDF /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		00BF66B9241D5C9100FB0FDF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00BF66BB241D5C9800FB0FDF /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		00BF66BD241D5CA100FB0FDF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,11 @@
 			children = (
 				00BF6691241D595D00FB0FDF /* AppDelegate.swift */,
 				00BF6693241D595D00FB0FDF /* SceneDelegate.swift */,
-				00BF6695241D595D00FB0FDF /* ViewController.swift */,
-				00BF6697241D595D00FB0FDF /* Main.storyboard */,
+				00BF66B6241D5C7E00FB0FDF /* DateCell.swift */,
+				00BF66B5241D5C7E00FB0FDF /* HourCell.swift */,
+				00BF66B9241D5C9100FB0FDF /* ViewController.swift */,
+				00BF66BB241D5C9800FB0FDF /* Weather.swift */,
+				00BF66BD241D5CA100FB0FDF /* Main.storyboard */,
 				00BF669D241D595F00FB0FDF /* Assets.xcassets */,
 				00BF669F241D595F00FB0FDF /* LaunchScreen.storyboard */,
 				00BF66A2241D595F00FB0FDF /* Info.plist */,
@@ -128,9 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BF66BE241D5CA100FB0FDF /* Main.storyboard in Resources */,
 				00BF66A1241D595F00FB0FDF /* LaunchScreen.storyboard in Resources */,
 				00BF669E241D595F00FB0FDF /* Assets.xcassets in Resources */,
-				00BF6699241D595D00FB0FDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +150,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BF66BA241D5C9100FB0FDF /* ViewController.swift in Sources */,
 				00BF669C241D595D00FB0FDF /* SkillBox14.xcdatamodeld in Sources */,
-				00BF6696241D595D00FB0FDF /* ViewController.swift in Sources */,
+				00BF66B8241D5C7E00FB0FDF /* DateCell.swift in Sources */,
 				00BF6692241D595D00FB0FDF /* AppDelegate.swift in Sources */,
 				00BF6694241D595D00FB0FDF /* SceneDelegate.swift in Sources */,
+				00BF66B7241D5C7E00FB0FDF /* HourCell.swift in Sources */,
+				00BF66BC241D5C9800FB0FDF /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		00BF6697241D595D00FB0FDF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00BF6698241D595D00FB0FDF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		00BF669F241D595F00FB0FDF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
