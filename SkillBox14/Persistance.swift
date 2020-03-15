@@ -6,7 +6,6 @@ class Persistance {
     private let wCitiName = "Persistance.wCitiName"
     private let wCitiTemp = "Persistance.wCitiTemp"
     private let wMainData = "Persistance.wMainData"
-//    mainData: [String] = []
     
     var citiName: String? {
         set { UserDefaults.standard.set(newValue, forKey: wCitiName) }
@@ -23,4 +22,21 @@ class Persistance {
         get { return (UserDefaults.standard.array(forKey: wMainData) as? Array<String>) }
     }
     
+}
+
+class PersistanceNames {
+    static let shared = PersistanceNames()
+    
+    private let nName = "PersistanceNames.nName"
+    private let nLastName = "PersistanceNames.nLastName"
+    
+    var name: String? {
+        set { UserDefaults.standard.set(newValue, forKey: nName) }
+        get { UserDefaults.standard.string(forKey: nName) }
+    }
+    
+    var lastName: String? {
+        set { UserDefaults.standard.set(newValue, forKey: nLastName) }
+        get { UserDefaults.standard.string(forKey: nLastName) }
+    }
 }
