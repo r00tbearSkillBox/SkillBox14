@@ -11,7 +11,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var appTableView: UITableView!
     
-
+    @IBOutlet weak var activitiInd: UIActivityIndicatorView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,9 @@ class ViewController: UIViewController {
     }
     
     func loadWeather() {
-        
+        activitiInd.startAnimating()
+        self.cityLabel.text = Persistance.shared.citiName ?? "Loading.."
+        self.citiTemp.text = Persistance.shared.citiTemp ?? "Loading.."
         
         let urlString = "https://api.darksky.net/forecast/f44d65453eb8779a6f59e379e8b02a2a/55.7522,37.6155?lang=ru&exclude=minutely,alerts,flags&units=auto"
         guard let url = URL(string: urlString) else { return }
@@ -43,16 +46,29 @@ class ViewController: UIViewController {
                         print(self.hours[i-1])
                         self.mainData.append("\(self.getHour(hour: self.hours[i-1].time!))" + "      " + "\(Int(self.hours[i-1].temperature!))" + "˚C")
                     }
+                    
+                    
+                    
 
                     print("часы: ", self.hours.count)
                     print("дни: ", self.days.count)
                     print(self.mainData)
-            
                     
-                    DispatchQueue.main.async {
-                        self.cityLabel.text = cityWeather.timezone!
-                        self.citiTemp.text = "\(Int(cityWeather.currently!.temperature!))˚C"
+                    Persistance.shared.citiName = cityWeather.timezone
+                    Persistance.shared.citiTemp = "\(Int(cityWeather.currently!.temperature!))˚C"
+                    Persistance.shared.mainData = self.mainData
+
+                    
+                    print(">>>>>>>>>>>>>>><<<<<<<<<<<<<")
+                    print(Persistance.shared.mainData?.count)
+                    print(Persistance.shared.mainData?[0])
+                    print(Persistance.shared.mainData)
+
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3)  {
+                        self.cityLabel.text = Persistance.shared.citiName!
+                        self.citiTemp.text = Persistance.shared.citiTemp!
                         self.appTableView.reloadData()
+                        self.activitiInd.stopAnimating()
                     }
                     
                     
@@ -94,7 +110,8 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let dateCell = tableView.dequeueReusableCell(withIdentifier: "DateCell") as! DateCell
-        dateCell.dateCellLabel.text = self.mainData[indexPath.row]
+        dateCell.dateCellLabel.text = Persistance.shared.mainData?[indexPath.row]
+
 
         return dateCell
         

@@ -17,6 +17,7 @@
 		00BF66BA241D5C9100FB0FDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF66B9241D5C9100FB0FDF /* ViewController.swift */; };
 		00BF66BC241D5C9800FB0FDF /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF66BB241D5C9800FB0FDF /* Weather.swift */; };
 		00BF66BE241D5CA100FB0FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BF66BD241D5CA100FB0FDF /* Main.storyboard */; };
+		00BF66C0241DAAC600FB0FDF /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF66BF241DAAC600FB0FDF /* Persistance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		00BF66B9241D5C9100FB0FDF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		00BF66BB241D5C9800FB0FDF /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		00BF66BD241D5CA100FB0FDF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		00BF66BF241DAAC600FB0FDF /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		00BF6690241D595D00FB0FDF /* SkillBox14 */ = {
 			isa = PBXGroup;
 			children = (
+				00BF66BF241DAAC600FB0FDF /* Persistance.swift */,
 				00BF6691241D595D00FB0FDF /* AppDelegate.swift */,
 				00BF6693241D595D00FB0FDF /* SceneDelegate.swift */,
 				00BF66B6241D5C7E00FB0FDF /* DateCell.swift */,
@@ -155,6 +158,7 @@
 				00BF66B8241D5C7E00FB0FDF /* DateCell.swift in Sources */,
 				00BF6692241D595D00FB0FDF /* AppDelegate.swift in Sources */,
 				00BF6694241D595D00FB0FDF /* SceneDelegate.swift in Sources */,
+				00BF66C0241DAAC600FB0FDF /* Persistance.swift in Sources */,
 				00BF66B7241D5C7E00FB0FDF /* HourCell.swift in Sources */,
 				00BF66BC241D5C9800FB0FDF /* Weather.swift in Sources */,
 			);

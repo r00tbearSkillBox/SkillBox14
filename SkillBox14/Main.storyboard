@@ -57,6 +57,11 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="9pp-oM-RFZ"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="FYT-c5-UMd">
+                                <rect key="frame" x="180" y="354" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.23762030392733924" green="0.23762030392733924" blue="0.23762030392733924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.60893313480143663" green="0.93390160346227935" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -75,6 +80,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Tab 1" id="743-cN-Asw"/>
                     <connections>
+                        <outlet property="activitiInd" destination="FYT-c5-UMd" id="xtC-ud-jYh"/>
                         <outlet property="appTableView" destination="zcr-2U-cCN" id="bQv-0d-0aF"/>
                         <outlet property="citiTemp" destination="Jec-c5-hIG" id="cc5-NM-LmK"/>
                         <outlet property="cityLabel" destination="E9O-Ll-rcF" id="g7g-qK-bLY"/>
@@ -82,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-329" y="866"/>
+            <point key="canvasLocation" x="-330.43478260869568" y="865.84821428571422"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BXF-qJ-th4">
