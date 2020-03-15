@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         activitiInd.startAnimating()
         self.cityLabel.text = Persistance.shared.citiName ?? "Loading.."
         self.citiTemp.text = Persistance.shared.citiTemp ?? "Loading.."
+        self.appTableView.reloadData()
         
         let urlString = "https://api.darksky.net/forecast/f44d65453eb8779a6f59e379e8b02a2a/55.7522,37.6155?lang=ru&exclude=minutely,alerts,flags&units=auto"
         guard let url = URL(string: urlString) else { return }
@@ -104,7 +105,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return mainData.count
+        return Persistance.shared.mainData?.count ?? mainData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
