@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002AB837242025520075EC19 /* RealmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002AB836242025520075EC19 /* RealmTableViewController.swift */; };
 		00BF6692241D595D00FB0FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF6691241D595D00FB0FDF /* AppDelegate.swift */; };
 		00BF6694241D595D00FB0FDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF6693241D595D00FB0FDF /* SceneDelegate.swift */; };
 		00BF669C241D595D00FB0FDF /* SkillBox14.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00BF669A241D595D00FB0FDF /* SkillBox14.xcdatamodeld */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002AB836242025520075EC19 /* RealmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTableViewController.swift; sourceTree = "<group>"; };
 		00BF668E241D595D00FB0FDF /* SkillBox14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillBox14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BF6691241D595D00FB0FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00BF6693241D595D00FB0FDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		00BF6690241D595D00FB0FDF /* SkillBox14 */ = {
 			isa = PBXGroup;
 			children = (
+				002AB836242025520075EC19 /* RealmTableViewController.swift */,
 				00BF66C5241EABBB00FB0FDF /* CDTableViewController.swift */,
 				00BF66C1241E8BB600FB0FDF /* NamesViewController.swift */,
 				00BF66B9241D5C9100FB0FDF /* ViewController.swift */,
@@ -165,6 +168,7 @@
 				00BF6692241D595D00FB0FDF /* AppDelegate.swift in Sources */,
 				00BF66C2241E8BB600FB0FDF /* NamesViewController.swift in Sources */,
 				00BF6694241D595D00FB0FDF /* SceneDelegate.swift in Sources */,
+				002AB837242025520075EC19 /* RealmTableViewController.swift in Sources */,
 				00BF66C0241DAAC600FB0FDF /* Persistance.swift in Sources */,
 				00BF66B7241D5C7E00FB0FDF /* HourCell.swift in Sources */,
 				00BF66C6241EABBB00FB0FDF /* CDTableViewController.swift in Sources */,
