@@ -1,4 +1,5 @@
 import Foundation
+import RealmSwift
 
 class Persistance {
     static let shared = Persistance()
@@ -38,5 +39,39 @@ class PersistanceNames {
     var lastName: String? {
         set { UserDefaults.standard.set(newValue, forKey: nLastName) }
         get { UserDefaults.standard.string(forKey: nLastName) }
+    }
+}
+
+class TasksRealm: Object {
+    @objc dynamic var task = ""
+}
+
+class PersistanceRealm {
+    static let shared = PersistanceRealm()
+    private let realm = try! Realm()
+    
+    func saveTask(task: String) {
+        let tasks = TasksRealm()
+        tasks.task = task
+        try! realm.write {
+            realm.add(tasks)
+        }
+        
+    }
+    
+    func loadTask() -> [String] {
+        let allTasks = realm.objects(TasksRealm.self)
+        var tasks: [String] = []
+        for task in allTasks {
+            tasks.append("\(task.task)")
+        }
+        return tasks
+    }
+    
+    func deleteTask(withId: Int) {
+        let taskToDelete = realm.objects(TasksRealm.self)[withId]
+        try! realm.write {
+            realm.delete(taskToDelete)
+        }
     }
 }

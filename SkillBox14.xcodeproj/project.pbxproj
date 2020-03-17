@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		002AB836242025520075EC19 /* RealmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTableViewController.swift; sourceTree = "<group>"; };
-		002AB83824202A090075EC19 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		002AB83824202A090075EC19 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		00BF668E241D595D00FB0FDF /* SkillBox14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillBox14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BF6691241D595D00FB0FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00BF6693241D595D00FB0FDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,11 +82,11 @@
 		00BF6690241D595D00FB0FDF /* SkillBox14 */ = {
 			isa = PBXGroup;
 			children = (
+				00BF66BF241DAAC600FB0FDF /* Persistance.swift */,
 				002AB836242025520075EC19 /* RealmTableViewController.swift */,
 				00BF66C5241EABBB00FB0FDF /* CDTableViewController.swift */,
 				00BF66C1241E8BB600FB0FDF /* NamesViewController.swift */,
 				00BF66B9241D5C9100FB0FDF /* ViewController.swift */,
-				00BF66BF241DAAC600FB0FDF /* Persistance.swift */,
 				00BF6691241D595D00FB0FDF /* AppDelegate.swift */,
 				00BF6693241D595D00FB0FDF /* SceneDelegate.swift */,
 				00BF66B6241D5C7E00FB0FDF /* DateCell.swift */,
@@ -115,7 +115,6 @@
 				EF0182EB104F29531549BD40 /* Pods-SkillBox14.debug.xcconfig */,
 				AE0018A3D9C7034C5FCD9606 /* Pods-SkillBox14.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

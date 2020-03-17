@@ -17,7 +17,8 @@ class RealmTableViewController: UITableViewController {
         let saveAction = UIAlertAction(title: "Save", style: .default) { action in
             let tf = alertController.textFields?.first
             if let newTask = tf?.text {
-                self.tasks.insert(newTask, at: 0)
+                self.tasks.append(newTask)
+                PersistanceRealm.shared.saveTask(task: newTask)
                 self.tableView.reloadData()
             }
         }
@@ -33,6 +34,7 @@ class RealmTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tasks = PersistanceRealm.shared.loadTask()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -55,7 +57,7 @@ class RealmTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath)
-
+        
         cell.textLabel?.text = tasks[indexPath.row]
 
         return cell
@@ -70,6 +72,7 @@ class RealmTableViewController: UITableViewController {
         if (editingStyle == .delete) {
             let item = tasks[indexPath.row]
             tasks.remove(at: indexPath.row)
+            PersistanceRealm.shared.deleteTask(withId: indexPath.row)
             
             do{
             }catch {
